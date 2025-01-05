@@ -245,7 +245,7 @@ function updateScoreDisplay() {
     scoresList.innerHTML = '';
     previousScores.forEach((score, index) => {
         const li = document.createElement('li');
-        li.textContent = `Game ${index + 1}: ${score} points`;
+        li.textContent = `Game ${previousScores.length - index}: ${score} points`;
         scoresList.appendChild(li);
     });
 }
